@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Functions can be invoked automatically without being called:</p>
+
+<p id="demo"></p>
+
+<script>
+(function () {
+  document.getElementById("demo").innerHTML = "Hello! I called myself";
+})();
+</script>
+
+</body>
+</html>
+
