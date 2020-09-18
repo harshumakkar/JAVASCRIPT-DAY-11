@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Setter</h2>
+
+<p>When using a setter to set a property value, you do not use parantheses.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this._carname = brand;
+  }
+  set carname(x) {
+    this._carname = x;
+  }
+  get carname() {
+    return this._carname;
+  }
+}
+
+mycar = new Car("Ford");
+mycar.carname = "Volvo";
+document.getElementById("demo").innerHTML = mycar.carname;
+</script>
+
+</body>
+</html>
