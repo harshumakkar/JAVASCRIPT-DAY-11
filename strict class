@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Classes are written in "strict mode"</h2>
+
+<p>You will get an error if you try to use a variable without declaring it.</p>
+
+<script>
+class Car {
+  constructor(brand) {
+    i = 0;
+    this.carname = brand;
+  }
+}
+var mycar = new Car("Ford");
+</script>
+
+<p>Press F12 to see the error description in the console.</p>
+
+</body>
+</html>
